@@ -10,7 +10,9 @@
     {{ content }}
 
     {% include footer.html %}
-
+      <script type="text/javascript" src="{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
+      <script src="/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+      <script type="text/javascript" src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
   </body>
 
 </html>

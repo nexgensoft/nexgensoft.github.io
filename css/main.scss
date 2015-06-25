@@ -51,5 +51,13 @@ $on-laptop:        800px;
 @import
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "bootstrap/variables",
+        "bootstrap/mixins",
+        "bootstrap/normalize",
+        "bootstrap/labels",
+        "bootstrap/buttons",
+        "bootstrap/input-groups",
+        "bootstrap/scaffolding",
+        "bootstrap/forms"
 ;

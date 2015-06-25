@@ -23,6 +23,7 @@
     line-height: 56px;
 
     .menu-icon {
+        box-sizing: content-box;
         display: none;
     }
 
@@ -87,14 +88,14 @@
 }
 
 .section {
-    padding: 60px 20px;
+    padding: 60px 0;
 }
 
 .billboard {
     .image {
         box-sizing: border-box;
         width: 50%;
-        padding: 5%;
+        padding: 2%;
         float: left;
     }
 
@@ -216,6 +217,66 @@
 #seo {
     background-color: #59ABE3;
 }
+
+#get-started {
+    text-align: center;
+    background-color: #5C97BF;
+    padding: 8em 0;
+
+    h1 {
+        font-size: 2.6em;
+        color: #fff;
+        margin-bottom: 2em;
+    }
+
+    .button {
+        font-size: 1.3em;
+    }
+}
+
+#contact {
+    .wrapper {
+        width: 600px;
+    }
+
+    textarea {
+        max-width: 100%;
+        min-height: 125px;
+    }
+
+    @include media-query($on-palm) {
+        .wrapper {
+            width: auto;
+        }
+    }
+}
+
+.button {
+    background-color:#2ECC71;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    border:1px solid #18ab29;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff !important;
+    font-family:Arial;
+    font-size:17px;
+    padding:16px 31px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+
+    &:hover {
+        background-color:#3FC380;
+        text-decoration: none;
+    }
+
+    &:active {
+        position:relative;
+        top:1px;
+    }
+}
+
 
 /**
  * Site footer

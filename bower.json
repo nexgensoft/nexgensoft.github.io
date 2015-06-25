@@ -1,0 +1,21 @@
+{
+  "name": "nexgen-site",
+  "version": "1.0.0",
+  "authors": [
+    "Scot Wells <wells.scot@gmail.com>"
+  ],
+  "description": "Website for NexGen Software, LLC",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://nexgen.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}

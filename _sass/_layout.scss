@@ -8,8 +8,8 @@
         display: inline-block;
 
         img {
+            max-height: 56px;
             padding: 5px;
-            max-height: 100%;
             box-sizing: border-box;
         }
     }
@@ -103,7 +103,7 @@
 
         .title, .description {
             color: #fff;
-            font-family: Roboto, $base-font-family;
+            font-family: 'Roboto', $base-font-family;
         }
 
         .title {
@@ -154,7 +154,7 @@
         .title {
             text-align: center;
             font-size: 1.6em;
-            font-family: Roboto, $base-font-family;
+            font-family: 'Roboto', $base-font-family;
         }
 
         .description {

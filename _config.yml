@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
   developing high performance, fault tolerant, scalable applications. Our team takes
   advantage of the cloud and automated infrastructure to produce easily extendible,
   maintainable software. NexGen Software also specializes in Search Engine Optimization
-  and many white hat SEO strategies such as link building and keyword analysis.
+  and many White Hat SEO strategies such as link building and keyword analysis.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb

@@ -15,6 +15,40 @@ $(function() {
   $('form').submit(function (event) {
       event.preventDefault();
 
+      $(this).validate({
+        messages: {
+          name: "Please specify your name",
+          email: {
+            required: "We need your email address to contact you",
+            email: "Please provide a valid email"
+          },
+          subject: "Please provide a subject for your message",
+          message: "Did you forget the message? :)"
+        },
+        success: function(label, input) {
+          $(input).parent().addClass('has-success').removeClass('has-error');
+
+          var label = $('#' + $(input).attr('name') + '-error');
+
+          if (label) {
+            label.remove();
+          }
+        },
+        highlight: function(input) {
+          $(input).parent().addClass('has-error');
+        },
+        errorPlacement: function(error, element) {
+          error.prependTo(element.parent());
+        },
+        errorElement: 'div',
+        errorClass: 'alert alert-danger',
+        errorLabelContainer: '.form-errors'
+      });
+
+      if (!$(this).valid()) {
+        return;
+      }
+
       var data = {
         name:    $(this).find('[name="name"]').val(),
         email:   $(this).find('[name="email"]').val(),

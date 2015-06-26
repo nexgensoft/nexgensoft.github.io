@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "jquery": "~2.1.4",
-    "sweetalert": "~1.0.1"
+    "sweetalert": "~1.0.1",
+    "jquery-validation": "~1.13.1"
   }
 }
